@@ -14,6 +14,10 @@
 		D8AEA335189932CA0051367B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA334189932CA0051367B /* main.m */; };
 		D8AEA339189932CA0051367B /* GCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA338189932CA0051367B /* GCAppDelegate.m */; };
 		D8AEA33B189932CA0051367B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AEA33A189932CA0051367B /* Images.xcassets */; };
+		D8AEA3581899383A0051367B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AEA3571899383A0051367B /* CoreImage.framework */; };
+		D8AEA35A189938460051367B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AEA359189938460051367B /* QuartzCore.framework */; };
+		D8AEA35E18993BDC0051367B /* GCEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA35D18993BDC0051367B /* GCEditorViewController.m */; };
+		D8AEA36018993BF50051367B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AEA35F18993BF50051367B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,11 @@
 		D8AEA337189932CA0051367B /* GCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCAppDelegate.h; sourceTree = "<group>"; };
 		D8AEA338189932CA0051367B /* GCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCAppDelegate.m; sourceTree = "<group>"; };
 		D8AEA33A189932CA0051367B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D8AEA3571899383A0051367B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D8AEA359189938460051367B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D8AEA35C18993BDC0051367B /* GCEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCEditorViewController.h; path = "Classes/View Controllers/GCEditorViewController.h"; sourceTree = "<group>"; };
+		D8AEA35D18993BDC0051367B /* GCEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCEditorViewController.m; path = "Classes/View Controllers/GCEditorViewController.m"; sourceTree = "<group>"; };
+		D8AEA35F18993BF50051367B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AEA35A189938460051367B /* QuartzCore.framework in Frameworks */,
+				D8AEA3581899383A0051367B /* CoreImage.framework in Frameworks */,
 				D8AEA32B189932CA0051367B /* CoreGraphics.framework in Frameworks */,
 				D8AEA32D189932CA0051367B /* UIKit.framework in Frameworks */,
 				D8AEA329189932CA0051367B /* Foundation.framework in Frameworks */,
@@ -64,6 +75,8 @@
 		D8AEA327189932CA0051367B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8AEA359189938460051367B /* QuartzCore.framework */,
+				D8AEA3571899383A0051367B /* CoreImage.framework */,
 				D8AEA328189932CA0051367B /* Foundation.framework */,
 				D8AEA32A189932CA0051367B /* CoreGraphics.framework */,
 				D8AEA32C189932CA0051367B /* UIKit.framework */,
@@ -74,10 +87,12 @@
 		D8AEA32E189932CA0051367B /* cards */ = {
 			isa = PBXGroup;
 			children = (
+				D8AEA35B18993B9F0051367B /* View Controllers */,
 				D8AEA337189932CA0051367B /* GCAppDelegate.h */,
 				D8AEA338189932CA0051367B /* GCAppDelegate.m */,
 				D8AEA33A189932CA0051367B /* Images.xcassets */,
 				D8AEA32F189932CA0051367B /* Supporting Files */,
+				D8AEA35F18993BF50051367B /* Main.storyboard */,
 			);
 			path = cards;
 			sourceTree = "<group>";
@@ -91,6 +106,15 @@
 				D8AEA336189932CA0051367B /* cards-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8AEA35B18993B9F0051367B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8AEA35C18993BDC0051367B /* GCEditorViewController.h */,
+				D8AEA35D18993BDC0051367B /* GCEditorViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +171,7 @@
 			files = (
 				D8AEA333189932CA0051367B /* InfoPlist.strings in Resources */,
 				D8AEA33B189932CA0051367B /* Images.xcassets in Resources */,
+				D8AEA36018993BF50051367B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8AEA339189932CA0051367B /* GCAppDelegate.m in Sources */,
+				D8AEA35E18993BDC0051367B /* GCEditorViewController.m in Sources */,
 				D8AEA335189932CA0051367B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
