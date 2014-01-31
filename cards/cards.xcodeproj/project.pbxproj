@@ -18,6 +18,8 @@
 		D8AEA35A189938460051367B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AEA359189938460051367B /* QuartzCore.framework */; };
 		D8AEA35E18993BDC0051367B /* GCEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA35D18993BDC0051367B /* GCEditorViewController.m */; };
 		D8AEA36018993BF50051367B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AEA35F18993BF50051367B /* Main.storyboard */; };
+		D8AEA3651899489E0051367B /* GCCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA3641899489E0051367B /* GCCanvas.m */; };
+		D8AEA367189A8DAA0051367B /* Main~ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AEA366189A8DAA0051367B /* Main~ipad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		D8AEA35C18993BDC0051367B /* GCEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCEditorViewController.h; path = "Classes/View Controllers/GCEditorViewController.h"; sourceTree = "<group>"; };
 		D8AEA35D18993BDC0051367B /* GCEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCEditorViewController.m; path = "Classes/View Controllers/GCEditorViewController.m"; sourceTree = "<group>"; };
 		D8AEA35F18993BF50051367B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D8AEA3631899489E0051367B /* GCCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCCanvas.h; path = Classes/Views/GCCanvas.h; sourceTree = "<group>"; };
+		D8AEA3641899489E0051367B /* GCCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCCanvas.m; path = Classes/Views/GCCanvas.m; sourceTree = "<group>"; };
+		D8AEA366189A8DAA0051367B /* Main~ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main~ipad.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +92,14 @@
 		D8AEA32E189932CA0051367B /* cards */ = {
 			isa = PBXGroup;
 			children = (
+				D8AEA362189948820051367B /* Views */,
 				D8AEA35B18993B9F0051367B /* View Controllers */,
 				D8AEA337189932CA0051367B /* GCAppDelegate.h */,
 				D8AEA338189932CA0051367B /* GCAppDelegate.m */,
 				D8AEA33A189932CA0051367B /* Images.xcassets */,
 				D8AEA32F189932CA0051367B /* Supporting Files */,
 				D8AEA35F18993BF50051367B /* Main.storyboard */,
+				D8AEA366189A8DAA0051367B /* Main~ipad.storyboard */,
 			);
 			path = cards;
 			sourceTree = "<group>";
@@ -115,6 +122,15 @@
 				D8AEA35D18993BDC0051367B /* GCEditorViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D8AEA362189948820051367B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8AEA3631899489E0051367B /* GCCanvas.h */,
+				D8AEA3641899489E0051367B /* GCCanvas.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AEA367189A8DAA0051367B /* Main~ipad.storyboard in Resources */,
 				D8AEA333189932CA0051367B /* InfoPlist.strings in Resources */,
 				D8AEA33B189932CA0051367B /* Images.xcassets in Resources */,
 				D8AEA36018993BF50051367B /* Main.storyboard in Resources */,
@@ -185,6 +202,7 @@
 				D8AEA339189932CA0051367B /* GCAppDelegate.m in Sources */,
 				D8AEA35E18993BDC0051367B /* GCEditorViewController.m in Sources */,
 				D8AEA335189932CA0051367B /* main.m in Sources */,
+				D8AEA3651899489E0051367B /* GCCanvas.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +339,7 @@
 				D8AEA353189932CA0051367B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
